@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Protest+Revolution&display=swap');
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: 0;
+}
+body {
+    background-image: linear-gradient(to bottom, rgba(10, 1, 1, 0.945), rgb(21, 21, 93), rgb(96, 19, 96));
+    display: flex; /*precisa disso pro margin 0 auto do .clock funfar*/
+}
+p {
+    font-family: 'Sixtyfour', sans-serif;
+    color: rgba(255, 255, 255, 0.584);
+    
+}
+
+.clock {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+    display: flex; /*precisa disso pro j-content e a-itens de baixo funfar*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clock_h3 {
+    display: flex;
+    height: 100px;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-reflect: below 690px linear-gradient(transparent, rgba(0, 0, 0, 0.17));
+}
+.clock_h3 h3 {
+    color: white;
+    padding-bottom: 30px;
+    letter-spacing: 15px;
+    font-size: 65px;
+    font-family: "Honk", system-ui;
+}
+
+.timer {
+    width: 1000px;
+    height: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 350px;
+    column-gap: 20px;
+    -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.536));
+    position: relative;
+    box-shadow: -5px 10px 30px 10px black;
+    background-color: rgba(0, 0, 0, 0.88);
+    /*border: 1px solid red;"*/
+}
+
+.timer > div > div {
+    display: flex;/*
+    height: 200px;
+    width: 300px;*/
+}
+
+#hora {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+#hora > div {
+    justify-content: center;
+    align-items: center;
+}#minuto > div {
+    justify-content: center;
+    align-items: center;
+}#segundo > div {
+    justify-content: center;
+    align-items: center;
+}
+
+#hora_div1, #minuto_div1, #segundo_div1 {
+    font-size: 135px;
+    height: 250px;
+    width: 320px;
+    border: 3px solid black;
+    background-color: #2193f3;
+    border-radius: 10px 0px 10px 0x;
+}
+#hora_div2, #minuto_div2, #segundo_div2 {
+    font-size: 35px;
+    height: 90px;
+    width: 320px;
+    border: 3px solid black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #1a71b8;
+}

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="calc.css">
-    <script src="calc.js" defer></script>
+    <link rel="stylesheet" href="calc_ok.css">
+    <script src="calc_ok.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,8 +21,8 @@
         </div>
         <div class="divBtn">
             <div class="btn">
-                <button type="button" class="charKey" id="btnNum" data-value="2">2</button>
                 <button type="button" class="charKey" id="btnNum" data-value="1">1</button>
+                <button type="button" class="charKey" id="btnNum" data-value="2">2</button>
                 <button type="button" class="charKey" id="btnNum" data-value="3">3</button>
                 <button type="button" class="charKey" id="btnNum" data-value="4">4</button>
                 <button type="button" class="charKey" id="btnNum" data-value="5">5</button>
@@ -40,16 +43,17 @@
             </div>
             <div class="btn">
                 <div class="btn1">
-                    <button type="button" class="charKey" id="btnOp" data-value="">C</button>
-                    <button type="button" class="charKey" id="btnOp" data-value="()">()</button>
-                    <button type="button" class="charKey" id="btnOp" data-value="">
+                    <button type="button" class="charKey" id="clear" data-value="" style="color: rgb(214, 20, 20);">C</button>
+                    <button type="button" class="charKey" id="btnOp" data-value="%">%</button>
+                    <button type="button" class="charKey" id="apagar" data-value="">
                         << </button>
                 </div>
                 <div class="divEqual">
-                    <button type="button" class="charKey" id="btnOp" data-value="">=</button>
+                    <button type="button" class="charKey" id="equal" data-value="">=</button>
                 </div>
             </div>
         </div>
+        
     </main>
 </body>
 

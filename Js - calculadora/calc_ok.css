@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: ;
 }
 
 .main {
@@ -21,8 +22,10 @@ body {
     width: 640px; 
     background-color: rgb(26, 27, 40);
     border: 3px solid black;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.712);
 }
 .divRes {
     display: flex;
@@ -38,6 +41,7 @@ body {
 .divBtn {
     background-color: rgb(26, 27, 40);
     margin-top: -20px;
+    margin-left: 10px;
     width: 500px;
     height: 450px;
     display: flex;
@@ -64,16 +68,20 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 160px;
-    /*border: 3px solid white;*/
+    width: 120px;
+    /*border: 1px solid rgb(197, 68, 68);*/
     row-gap: 12px;
-    margin-left: -20px;
+    margin-left: 0px;
     margin-top: 1px;
 }
 .divEqual {
+    width: 120px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     /*border: 3px solid white;*/
-    margin-left: -20px;
 }
 .divEqual > button {
     height: 170px;
@@ -86,10 +94,12 @@ body {
 }
 
 #btnNum {
-    background-color: rgba(30, 36, 53);
+    background-color: rgb(40, 49, 71);
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     border: none;
+    font-family: "Kode Mono", monospace;
+    font-weight: 550;
 }
 #btnNum:hover {
     background-color: rgb(54, 55, 58);
@@ -97,26 +107,33 @@ body {
     border-color: white;
 }
 #btnOp {
-    background-color: rgba(82, 201, 220);
+    background-color: rgb(48, 154, 170);
     color: white;
     font-size: 55px;
 }
 #equal, #apagar, #clear{
-    background-color: rgba(82, 201, 220);
+    background-color: rgba(48, 154, 170);
     color: white;
     font-size: 55px;
 }
 
 #btnOp:hover {
     background-color: rgba(44, 51, 78, 0.948);
-    border: 1px solid;
+    border: 3px solid;
     border-color: white;
 }
 
-#equal:hover, #apagar:hover {
+#apagar:hover, #clear:hover, #equal:hover {
     background-color: rgba(44, 51, 78, 0.948);
-    border: 1px solid;
-    border-color: white;
+    border: 3px solid white;
+}
+#apagar, #clear {
+    color: rgb(214, 20, 20);
+    font-weight: bold;
+}
+#apagar:hover, #clear:hover {
+    color: rgb(223, 53, 53);
+    font-weight: 800;
 }
 
 #input {
@@ -143,4 +160,6 @@ body {
     font-family: "Kode Mono", monospace;
     font-weight: 550;
 }
+
+
 

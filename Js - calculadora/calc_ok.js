@@ -35,9 +35,7 @@ input.addEventListener('keydown', function(ev){
         input.value = resultInput.value
     }
     }
-    document.getElementById('clickas').addEventListener('click', function (){
-        input.value = ''
-    })
+    
 })
 
 /*1ºSelecionar todos que tem a classe 'charKey; 2º'Para cada um deles
@@ -73,4 +71,33 @@ document.getElementById('equal').addEventListener('click', function(){
     resultInput.value = resultEnter 
     input.value = resultInput.value
 }
+})
+
+/*const mainCss = document.getElementsByName('main')
+mainCss.style.backgroundColor = 'red'*/
+
+
+
+/*const mc = document.getElementById('ClearMode')*/
+
+/*Dá pra fazer desses 2 modos*/
+function modopreto() {
+    document.body.style.backgroundColor = 'gray'
+}
+
+
+document.getElementById('ClearMode').addEventListener('click', function LightMode(){
+    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'
+    document.body.style.color = 'violet'
+    document.querySelector('main').style.backgroundColor = 'white';
+    document.getElementById('divBtn1').style.backgroundColor = 'white';
+    document.querySelectorAll("#btnNum").forEach(function (btnNum) {
+        btnNum.style.backgroundColor = '#26834a'
+        })
+    document.querySelectorAll("#btnOp").forEach(function (btnNum) {
+        btnNum.style.backgroundColor = '#26834a'
+        })
+    document.querySelector('#clear').style.backgroundColor = 'black'
+    document.querySelector('#apagar').style.backgroundColor = 'black'
+    document.querySelector('#equal').style.backgroundColor = 'black'
 })

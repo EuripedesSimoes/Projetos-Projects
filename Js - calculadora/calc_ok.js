@@ -82,22 +82,101 @@ mainCss.style.backgroundColor = 'red'*/
 
 /*Dá pra fazer desses 2 modos*/
 function modopreto() {
-    document.body.style.backgroundColor = 'gray'
+    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'
+
+    document.querySelector('main').style.backgroundColor = 'rgb(26, 27, 40)';
+    document.getElementById('divBtn1').style.backgroundColor = 'rgb(26, 27, 40)';
+    document.querySelectorAll("#btnNum").forEach(function (btnNum) {
+        btnNum.style.backgroundColor = '#4dff91'
+        btnNum.style.color = 'rgba(15, 15, 15, 0.8)'
+        })
+    document.querySelectorAll("#btnOp").forEach(function (btnOp) {
+        btnOp.style.backgroundColor = '#26834a'
+        btnOp.style.color = 'black'
+        })
+    document.querySelector('#clear').style.backgroundColor = '#26834a'
+    document.querySelector('#clear').style.color = 'white'
+    document.querySelector('#apagar').style.backgroundColor = '#26834a'
+    document.querySelector('#apagar').style.color = 'white'
+    document.querySelector('#equal').style.backgroundColor = '#26834a'
+    document.querySelector('#equal').style.color = 'white'
+
+    let changeEq = document.querySelector('#equal')
+    changeEq.addEventListener('mouseenter',function mudcor(){
+    changeEq.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
+    
+    changeEq.addEventListener('mouseout',function mudcor2(){
+    changeEq.style.backgroundColor = '#26834a'})
+
+    let changeAp = document.querySelector('#apagar')
+    changeAp.addEventListener('mouseenter',function mudcor(){
+    changeAp.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
+        
+    changeAp.addEventListener('mouseout',function mudcor2(){
+    changeAp.style.backgroundColor = '#26834a'})
+
+    let changeCl = document.querySelector('#clear')
+    changeCl.addEventListener('mouseenter',function mudcor(){
+    changeCl.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
+        
+    changeCl.addEventListener('mouseout',function mudcor2(){
+    changeCl.style.backgroundColor = '#26834a'})
 }
 
 
+
+
+function modoclaro(){
 document.getElementById('ClearMode').addEventListener('click', function LightMode(){
-    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'
-    document.body.style.color = 'violet'
-    document.querySelector('main').style.backgroundColor = 'white';
-    document.getElementById('divBtn1').style.backgroundColor = 'white';
+    document.body.style.backgroundColor = 'gray'
+
+    document.querySelector('main').style.backgroundColor = 'rgb(225, 225, 225)';
+    document.getElementById('divBtn1').style.backgroundColor = 'rgb(225, 225, 225)';
     document.querySelectorAll("#btnNum").forEach(function (btnNum) {
-        btnNum.style.backgroundColor = '#26834a'
+        /*btnNum.id = 'teste'*/
+        btnNum.style.backgroundColor = 'rgb(40, 49, 71)'
+        btnNum.style.color = 'white'
         })
-    document.querySelectorAll("#btnOp").forEach(function (btnNum) {
-        btnNum.style.backgroundColor = '#26834a'
+    document.querySelectorAll("#btnOp").forEach(function (btnOp) {
+        btnOp.style.backgroundColor = 'rgb(48, 154, 170)'
+        btnOp.style.color = 'black'
         })
-    document.querySelector('#clear').style.backgroundColor = 'black'
-    document.querySelector('#apagar').style.backgroundColor = 'black'
-    document.querySelector('#equal').style.backgroundColor = 'black'
-})
+    document.querySelector('#clear').style.backgroundColor = 'rgb(48, 154, 170)'
+    document.querySelector('#clear').style.color = 'rgb(214, 20, 20)'
+    document.querySelector('#apagar').style.backgroundColor = 'rgb(48, 154, 170)'
+    document.querySelector('#apagar').style.color = 'rgb(214, 20, 20)'
+    document.querySelector('#equal').style.backgroundColor = 'rgb(48, 154, 170)'
+    document.querySelector('#equal').style.color = 'white'
+
+
+
+    let corChange = document.querySelector('#equal')
+    corChange.addEventListener('mouseenter', function mudcor(){
+        corChange.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
+
+    corChange.addEventListener('mouseout', function mudcor2(){
+        corChange.style.backgroundColor = 'rgb(48, 154, 170)'})
+
+
+    let changeEq = document.querySelector('#equal')
+        changeEq.addEventListener('mouseenter',function mudcor(){
+        changeEq.style.backgroundColor = 'rgba(48, 120, 94)'})
+        
+        changeEq.addEventListener('mouseout',function mudcor2(){
+        changeEq.style.backgroundColor = 'rgb(48, 154, 170)'})
+    
+    let changeAp = document.querySelector('#apagar')
+        changeAp.addEventListener('mouseenter',function mudcor(){
+        changeAp.style.backgroundColor = 'rgba(48, 120, 94)'})
+            
+        changeAp.addEventListener('mouseout',function mudcor2(){
+        changeAp.style.backgroundColor = 'rgb(48, 154, 170)'})
+    
+    let changeCl = document.querySelector('#clear')
+        changeCl.addEventListener('mouseenter',function mudcor(){
+        changeCl.style.backgroundColor = 'rgba(48, 120, 94)'})
+            
+        changeCl.addEventListener('mouseout',function mudcor2(){
+        changeCl.style.backgroundColor = 'rgb(48, 154, 170)'})
+    })
+}

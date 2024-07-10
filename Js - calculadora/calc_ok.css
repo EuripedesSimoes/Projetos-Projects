@@ -189,3 +189,109 @@ body {
     background-color: rgb(36, 36, 36);
     color: white;
 }
+
+#mainnormal {
+    background-color: red;
+    color: rgb(58, 56, 56);
+}
+
+#mainnormal:hover {
+    background-color: blue;
+}
+
+#mainnormal2 {
+    background-color: rgb(166, 255, 0);
+    color: rgb(58, 56, 56);
+}
+#mainnormal2:hover {
+    background-color: rgb(255, 0, 191);
+/*/////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////*/
+}
+#mainBlack {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 690px;
+    width: 640px; 
+    /*background-color: rgb(26, 27, 40);*/
+    background-color: rgb(46, 112, 167);
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  5px 5px 5px rgb(215, 216, 226);
+}
+#divBtn1Black {
+    /*background-color: rgb(26, 27, 40);*/
+    background-color: rgb(105, 108, 155);
+}
+
+#btnNumBlack, #btnOpBlack {
+    background-color: #8fe6b0;
+    color: rgba(15, 15, 15, 0.8);
+    font-size: 45px;
+    border: none;
+    font-family: "Kode Mono", monospace;
+    font-weight: 550;
+}
+
+#apagarBlack, #clearBlack, #equalBlack {
+    background-color: #26834a;
+    font-size: 55px;
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+#btnNumBlack:hover, #apagarBlack:hover, #clearBlack:hover, #equalBlack:hover{
+    transition: 0.2s;
+    background-color: rebeccapurple;
+}
+
+/*Light Mode*/
+
+#mainLight {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 690px;
+    width: 640px; 
+    /*background-color: rgb(26, 27, 40);*/
+    background-color: rgb(225, 225, 225);
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  5px 5px 5px rgb(215, 216, 226);
+}
+#divBtn1Light {
+    /*background-color: rgb(26, 27, 40);*/
+    background-color: rgb(225, 225, 225);
+}
+
+#btnNumLight {
+    background-color: rgb(40, 49, 71);
+    color: white;
+    font-size: 45px;
+    border: none;
+    font-family: "Kode Mono", monospace;
+    font-weight: 550;
+}
+#btnOpLight {
+    background-color: rgb(48, 154, 170);
+    color: black
+}
+
+#apagarLight, #clearLight, #equalLight {
+    background-color: rgb(48, 154, 170);
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(214, 20, 20);
+}
+
+#btnNumLight:hover, #apagarLight:hover, #clearLight:hover, #equalLight:hover{
+    transition: 0.2s;
+    background-color: rebeccapurple;
+}
+

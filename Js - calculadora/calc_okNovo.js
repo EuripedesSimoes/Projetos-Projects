@@ -82,18 +82,49 @@ mainCss.style.backgroundColor = 'red'*/
 
 /*Dá pra fazer desses 2 modos*/
 function modopreto() {
-    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'
+    const btnteste = document.getElementById('mainnormal')
+    btnteste.setAttribute('id','mainnormal2')
 
-    document.querySelector('main').style.backgroundColor = 'rgb(26, 27, 40)';
-    document.getElementById('divBtn1').style.backgroundColor = 'rgb(26, 27, 40)';
-    document.querySelectorAll("#btnNum").forEach(function (btnNum) {
+    /*document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'*/
+    
+    const divBtn1_Black = document.getElementById('divBtn1')
+    divBtn1_Black.setAttribute('id','divBtn1Black')
+
+    const main_Black = document.querySelector('main')
+    main_Black.setAttribute('id','mainBlack')
+
+    for(i=0; i<10; i++){
+    const btnNumBlack = document.getElementById('btnNum')
+    btnNumBlack.dataset = btnNumBlack.dataset + 1
+    btnNumBlack.setAttribute('id','btnNumBlack')
+}    
+    for(i=0; i<10; i++){
+    const btnOpBlack = document.getElementById('btnOp')
+    btnOpBlack.dataset = btnOpBlack.dataset + 1
+    btnOpBlack.setAttribute('id','btnOpBlack')
+}
+    
+    const apagar_black = document.getElementById('apagar')
+    apagar_black.setAttribute('id','apagarBlack')
+    const clear_Black = document.getElementById('clear')
+    clear_Black.setAttribute('id','clearBlack')
+    const equal_Black = document.getElementById('equal')
+    equal_Black.setAttribute('id','equalBlack')
+    /*document.querySelector('main').style.backgroundColor = 'rgb(26, 27, 40)';*/
+    /*document.getElementById('divBtn1').style.backgroundColor = 'rgb(26, 27, 40)';*/
+    /*document.querySelectorAll("#btnNum").forEach(function (btnNum) {
         btnNum.style.backgroundColor = '#4dff91'
         btnNum.style.color = 'rgba(15, 15, 15, 0.8)'
-        })
+        })*/
+
+
+        /*
     document.querySelectorAll("#btnOp").forEach(function (btnOp) {
         btnOp.style.backgroundColor = '#26834a'
         btnOp.style.color = 'black'
-        })
+        })*/
+
+    /*
     document.querySelector('#clear').style.backgroundColor = '#26834a'
     document.querySelector('#clear').style.color = 'white'
     document.querySelector('#apagar').style.backgroundColor = '#26834a'
@@ -120,36 +151,58 @@ function modopreto() {
     changeCl.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
         
     changeCl.addEventListener('mouseout',function mudcor2(){
-    changeCl.style.backgroundColor = '#26834a'})
+    changeCl.style.backgroundColor = '#26834a'})*/
 }
 
 
 
 
 function modoclaro(){
-document.getElementById('ClearMode').addEventListener('click', function LightMode(){
-    document.body.style.backgroundColor = 'gray'
+    const bodyLight = document.querySelector('body')
+    bodyLight.style.backgroundColor = 'gray'
 
-    document.querySelector('main').style.backgroundColor = 'rgb(225, 225, 225)';
-    document.getElementById('divBtn1').style.backgroundColor = 'rgb(225, 225, 225)';
-    document.querySelectorAll("#btnNum").forEach(function (btnNum) {
-        /*btnNum.id = 'teste'*/
-        btnNum.style.backgroundColor = 'rgb(40, 49, 71)'
-        btnNum.style.color = 'white'
-        })
+    const btnteste = document.getElementById('mainnormal')
+    btnteste.setAttribute('id','mainnormal2')
+
+    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.712)'
+    
+    const divBtn1_Light = document.getElementById('divBtn1')
+    divBtn1_Light.setAttribute('id','divBtn1Light')
+
+    const main_Light = document.querySelector('main')
+    main_Light.setAttribute('id','mainLight')
+
+    for(i=0; i<10; i++){
+    const btnNumLight = document.getElementById('btnNum')
+    btnNumLight.dataset = btnNumLight.dataset + 1
+    btnNumLight.setAttribute('id','btnNumLight')
+}
+    /*for(i=0; i<10; i++){
+    const btnOpLight = document.getElementById('btnOp')
+    btnOpLight.dataset = btnOp.dataset + 1
+    btnOp.setAttribute('id','btnOpLight')
+}*/
+
+    const btnOpLight = document.querySelector('btnOp')
+    btnOpLight.setAttribute('id', 'btnOpLight')
+
+
+    const apagar_Light = document.getElementById('apagar')
+    apagar_Light.setAttribute('id','apagarLight')
+    const clear_Light = document.getElementById('clear')
+    clear_Light.setAttribute('id','clearLight')
+    const equal_Light = document.getElementById('equal')
+    equal_Light.setAttribute('id','equalLight')
+}
+    /*
+
     document.querySelectorAll("#btnOp").forEach(function (btnOp) {
         btnOp.style.backgroundColor = 'rgb(48, 154, 170)'
         btnOp.style.color = 'black'
         })
-    document.querySelector('#clear').style.backgroundColor = 'rgb(48, 154, 170)'
-    document.querySelector('#clear').style.color = 'rgb(214, 20, 20)'
-    document.querySelector('#apagar').style.backgroundColor = 'rgb(48, 154, 170)'
-    document.querySelector('#apagar').style.color = 'rgb(214, 20, 20)'
-    document.querySelector('#equal').style.backgroundColor = 'rgb(48, 154, 170)'
-    document.querySelector('#equal').style.color = 'white'
 
-
-
+*/
+/*
     let corChange = document.querySelector('#equal')
     corChange.addEventListener('mouseenter', function mudcor(){
         corChange.style.backgroundColor = 'rgba(44, 51, 78, 0.948)'})
@@ -165,18 +218,4 @@ document.getElementById('ClearMode').addEventListener('click', function LightMod
         changeEq.addEventListener('mouseout',function mudcor2(){
         changeEq.style.backgroundColor = 'rgb(48, 154, 170)'})
     
-    let changeAp = document.querySelector('#apagar')
-        changeAp.addEventListener('mouseenter',function mudcor(){
-        changeAp.style.backgroundColor = 'rgba(48, 120, 94)'})
-            
-        changeAp.addEventListener('mouseout',function mudcor2(){
-        changeAp.style.backgroundColor = 'rgb(48, 154, 170)'})
-    
-    let changeCl = document.querySelector('#clear')
-        changeCl.addEventListener('mouseenter',function mudcor(){
-        changeCl.style.backgroundColor = 'rgba(48, 120, 94)'})
-            
-        changeCl.addEventListener('mouseout',function mudcor2(){
-        changeCl.style.backgroundColor = 'rgb(48, 154, 170)'})
-    })
-}
+*/

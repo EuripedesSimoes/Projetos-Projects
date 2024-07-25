@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 680px; 
+    background-color: rgb(26, 27, 40);
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.divRes {
+    display: flex;
+    width: 544px;
+    height: 300px;
+    /*border: 3px solid rgb(151, 83, 83);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.divBtn {
+    background-color: rgb(26, 27, 40);
+    margin-top: -20px;
+    width: 520px;
+    height: 450px;
+    display: flex;
+    /*column-gap: 10px;*/
+    /*border: 3px solid black;*/
+    padding: 10px;
+    justify-content: space-around;
+}
+.divBtn > div {
+    /*border: 3px solid rgb(165, 181, 88);*/
+    row-gap: 12px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 450px;
+}
+.btn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    /*border: 3px solid white;*/
+    row-gap: 12px;
+    margin-left: -20px;
+    margin-top: 1px;
+}
+.divEqual {
+    height: 200px;
+    /*border: 3px solid white;*/
+    margin-left: -20px;
+}
+.divEqual > button {
+    height: 170px;
+
+}
+.charKey {
+    width: 90px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#btnNum {
+    background-color: rgba(30, 36, 53);
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+#btnNum:hover {
+    background-color: rgb(54, 55, 58);
+    border: 1px solid;
+    border-color: white;
+}
+#btnOp {
+    background-color: rgba(82, 201, 220);
+    color: white;
+    font-size: 55px;
+}
+#btnOp:hover {
+    background-color: rgba(44, 51, 78, 0.948);
+    border: 1px solid;
+    border-color: white;
+}
+input {
+    width: 520px;
+    height: 100px;
+    background-color: rgb(175, 175, 174);
+    border: none;
+}
+

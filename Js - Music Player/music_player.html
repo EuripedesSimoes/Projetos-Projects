@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocador de Músicas</title>
+    <link rel="stylesheet" href="music_player.css">
+    <script src="music_player.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <main class="main">
+        <div class="div_pic">
+            <img src="imgs-msc_player/Cover 1.jpg" id="imgID" alt="">
+            <h2 class="music_origin">Doom Eternal</h2>
+            <p class="music_name">The Only Thing They Fear Is You</p>
+        </div>
+        <audio id="musicAudio" src="Audio 1.mp3" type="audio/mp3"></audio>
+       
+        <div class="barra">
+            <progress id="myProgress" value="0" max="100"></progress>
+            <div class="ponto"></div>
+        </div>
+        <div class="tempo">
+            <p class="inicio_audio">0:00</p>
+            <p class="fim_audio">4:18</p>
+            <div id="volume"><img src="imgs-msc_player/max-volume.png" id="img_vol"></div>
+            <div id="volume2">
+                <progress id="prog_vol" value="0.8" max="1">
+                </progress>
+            </div>
+        </div>
+               
+        <div class="div_pass">
+            <button type="button"><img src="imgs-msc_player/rewind-button.png" id="Back"></button>
+            <button type="button"><img src="imgs-msc_player/play-button.png" id="PlayPause"></button>
+            <button type="button"><img src="imgs-msc_player/forward-button.png" id="Next"></button>
+        </div>
+    </main>
+</body>
+</html>
